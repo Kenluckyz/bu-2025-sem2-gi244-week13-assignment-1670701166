@@ -84,9 +84,9 @@ public class ObstacleObjectPool : MonoBehaviour
             return obj;
         }
     }
-
     public void Release(GameObject obstacle, int obstacleType)
     {
         obstacle.SetActive(false);
     }
 }
+   
