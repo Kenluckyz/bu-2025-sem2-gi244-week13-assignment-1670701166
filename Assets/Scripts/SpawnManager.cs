@@ -25,6 +25,8 @@ public class SpawnManager : MonoBehaviour
 
         GameObject obstacle = obstacleObjectPool.Acquire(obstacleType);
 
+        obstacle.GetComponent<MoveLeft>().obstacleType = obstacleType;
+
         obstacle.transform.position = spawnPoint.position;
         obstacle.transform.rotation = Quaternion.identity;
         obstacle.SetActive(true);
